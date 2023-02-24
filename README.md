@@ -1,8 +1,12 @@
-# A Ping Game
+# Ping Game
+
+![PingGame menu](https://i.imgur.com/rzqZo7I.png)
 
 The game was created as a challenge for the cybersecurity contest "Capture the flag" organized by PING cybersecurity club in December 2022.
 
 The concept of the game is a simple table tenis single-player gameplay with online ranking of scores. The game uses diegetic ui design (all necessary information such as number of points and number of lives are displayed in the game world).
+
+![PingGame gameplay](https://i.imgur.com/IYIgXng.png)
 
 The code is written in C# with Unity3D engine (version 2022.1.19f1).
 
