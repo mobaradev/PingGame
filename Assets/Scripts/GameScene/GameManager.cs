@@ -22,8 +22,10 @@ public class GameManager : MonoBehaviour
     public SoundsManager SoundsManager;
     public bool IsGameOn = true;
 
-    public RandomNumbers r1;
-    public RandomNumbers r2;
+    // public RandomNumbers r1;
+    public UnifiedRandom r1;
+    // public RandomNumbers r2;
+    public UnifiedRandom r2;
     public List<string> rSeeds = new List<string>();
     private List<string> _x = new List<string>();
 
@@ -56,8 +58,8 @@ public class GameManager : MonoBehaviour
         // Assign instances of RandomNumbers() to r1 and r2
         // note that the values are swapped (r1 = 2nd; r2 = 1st)
         // to make it harder for the potential cheater
-        this.r1 = new RandomNumbers((rSeeds[1]));
-        this.r2 = new RandomNumbers((rSeeds[0]));
+        this.r1 = new UnifiedRandom(rSeeds[1]);
+        this.r2 = new UnifiedRandom(rSeeds[0]);
      
         // Set proper server url
         this._serverUrl = PlayerPrefs.GetString("serverUrl");
@@ -95,7 +97,7 @@ public class GameManager : MonoBehaviour
 
     public string PrepareSecretCode()
     {
-        RandomNumbers rn = new RandomNumbers(this.gameObject.tag);
+        UnifiedRandom rn = new UnifiedRandom(this.gameObject.tag);
         int x = (int)((GameObject.FindGameObjectWithTag("Verifier").transform.position.y * rn.GetNumber(0, 500)) +
                       GameObject.FindGameObjectWithTag("Verifier").transform.position.z + rn.GetNumber(2, 250));
         string text = this.points + "-" + (double)(x - rn.GetNumber(0, x + (int)GameObject.FindGameObjectWithTag("Verifier").transform.position.x));
