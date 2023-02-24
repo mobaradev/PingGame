@@ -1589,9 +1589,6 @@ MonoBehaviour:
   r: 0
   g: 0
   b: 0
-  isRIncreasing: 1
-  isGIncreasing: 1
-  isBIncreasing: 1
   paddleMaterial: {fileID: 2100000, guid: d0d3160a337404227b17e527949e2526, type: 2}
 --- !u!4 &816687296 stripped
 Transform:
@@ -2556,7 +2553,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 400, y: 50}
+  m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1239380073
 MonoBehaviour:
@@ -2580,7 +2577,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Result not saved online
 
-    Could not connect to the server'
+    Could not connect to the server or score
+    verification failed'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30816540fcdd944dd948067fb9142503, type: 2}
   m_sharedMaterial: {fileID: 6532400924870629573, guid: 30816540fcdd944dd948067fb9142503, type: 2}
