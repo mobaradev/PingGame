@@ -224,11 +224,13 @@ by [suvoni](https://github.com/suvoni)
 - Script source files locations were rearranged
 - UnifiedRandom class replaced the previous RandomNumbers class. It works in almost the same way, however it's not compatible with old server version 1.0. Make sure to use the same client and server's version.
   
-## Author  
+## Author
   
 Michal Obara (@mobaradev)  
 [mobaradev@yahoo.com](mailto:mobaradev@yahoo.com)  
-http://www.mobaradev.com  
+http://www.mobaradev.com
+
+3D Racket model - [Jasmine Wells](https://github.com/5006845293)
   
 ## License  
   
